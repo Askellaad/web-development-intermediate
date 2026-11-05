@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Page</title>
+  <style>
+    /* for css */
+    /* ICT
+    id
+    class
+    type */
+    /* 
+    id 123
+
+    1 0 0
+    0 1 1
+
+    */
+
+    /* #animal {
+        padding: 20px;
+        background-color: aqua;
+    } */
+
+    /* .class_animal {
+        padding: 50px;
+        background-color: blue;
+    } */
+
+    /* img,
+    .class_animal {
+        padding: 10px;
+        background-color: brown;
+    } */
+  </style>
+</head>
+<body>
+
+  <h1>Hello, World!</h1>
+  <p>This is a simple page with just a few elements.</p>
+  <img id="animal" src="cat.jpg" width="300">
+  <br>
+  <br>
+  <button onclick="switch_image()"> Change Image</button>
+
+
+
+<script>
+    //for javascript
+    const images = ["cat.jpg", "elephant.jpg"];
+    let x = 0;//curent image
+    function switch_image() {
+        x = (x +1 ) % images.length;
+        document.getElementById("animal").src = images[x];
+    }
+</script>
+
+</body>
+</html>
