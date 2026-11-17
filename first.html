@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Practice Page</title>
+  <!-- Link your CSS file here -->
+  <link rel="stylesheet" href="first.css">
+</head>
+<body class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="header-title">My Practice Website</h1>
+    <nav class="nav">2
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2 class="hero-title">Hi, I'm learning web development</h2>
+    <p class="hero-text">This page is built to practice CSS. Every element has a class you can style.</p>
+    <a class="hero-button" href="#projects">See my work</a>
+  </section>
+
+  <main class="main">
+
+    <!-- About -->
+    <section class="section_about" id="about">
+      <h2 class="section-title">About Me</h2>
+      <img class="about-image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.MInViflWTn0CIsOU3esbLwHaE5%3Fpid%3DApi&f=1&ipt=b13ba01206f32a7a42a3a91ece02681df636a787dc66bbc1c44115e7adfdf27d&ipo=images" alt="Profile picture">
+      <p class="about-text">I am a beginner who loves building things for the web. I am learning HTML first, then CSS, and later JavaScript.</p>
+      <p class="about-text">In my free time I enjoy reading, drawing, and exploring new technology.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <h2 class="section-title">My Skills</h2>
+      <ul class="skills-list">
+        <li class="skills-item">HTML</li>
+        <li class="skills-item">CSS</li>
+        <li class="skills-item">JavaScript</li>
+        <li class="skills-item">Problem Solving</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="card">
+        <h3 class="card-title">Personal Blog</h3>
+        <p class="card-text">A simple blog where I write about what I learn each week.</p>
+        <a class="card-link" href="#">View project</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">To-Do App</h3>
+        <p class="card-text">A small app to keep track of daily tasks.</p>
+        <a class="card-link" href="#">View project</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Weather Page</h3>
+        <p class="card-text">A page that shows the weather for any city.</p>
+        <a class="card-link" href="#">View project</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="form" action="#" method="post">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" type="text" id="name" name="name" placeholder="Your name">
+
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com">
+
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+
+        <button class="form-button" type="submit">Send message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">&copy; 2026 My Practice Website. All rights reserved.</p>
+    <a class="footer-link" href="#">Back to top</a>
+  </footer>
+
+</body>
+</html>
