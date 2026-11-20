@@ -1,5 +1,6 @@
 *, *::before, *::after { box-sizing: border-box;}
 
+
 body {
     margin:0;
 }
@@ -7,7 +8,7 @@ body {
 .section_about {
     width: 100%;
     max-width: 600px;
-    padding: 10px;
+    padding: 10px; 
     margin: 0 auto;
     background-color: aquamarine;
 
@@ -24,6 +25,7 @@ img {
     height: auto;
 }
 
+/* media query */
 @media (min-width: 760px) {
     .section_about {
         padding: 2rem;
@@ -34,5 +36,68 @@ img {
     .section_about {
         max-width: 1100px;
         margin: 0 auto;
+    }
+}
+
+.all_section {
+    /* display : flex; */
+    /* height: 1000px; */
+    /* flex-direction: row-reverse; */
+    /* justify-content: space-evenly; */
+    /* align-items: baseline; */
+    flex-wrap: wrap;
+    
+    
+    
+    opacity: 0.5;
+}
+
+.sections {
+    display: flex;
+    margin: 30px;
+    /* gap: 30px 60px; */
+    background-color: brown;
+    /* align-items: stretch; */
+}
+
+.headings {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.headings > h1 {
+    margin: 0;
+}
+
+.headings > div {
+    justify-self: center;
+}
+
+.headings .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headings > button {
+    justify-self: end;
+}
+
+@media (max-width: 700px) {
+    .headings {
+        grid-template-columns: 1fr auto;
+    }
+
+    .headings > div {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-self: stretch;
     }
 }
